@@ -17,13 +17,13 @@ body {
     width: 100%;
     color: $color;
     background: $background;
-    padding: 16px;
     overflow-x: hidden;
 }
 
 .page-header {
     width: 100%;
-    margin: 48px auto;
+    margin: 3rem auto;
+    padding: 1rem;
 
     &__heading {
         font-weight: 600;
@@ -93,4 +93,133 @@ body {
     font-size: 1.25rem;
     line-height: 2rem;
     padding-bottom: .5rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    margin: 20px auto;
+    padding: 1rem;
+
+    &__heading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 500;
+        color: $headingColor;
+        text-align: center;
+
+        &--skill {
+            padding-bottom: .5rem;
+            border-bottom: 2px solid $ui2;
+        }
+    }
+
+    &__article {
+        width: 100%;
+        margin: 10px auto;
+
+        &--heading {
+            font-size: 1.375rem;
+            line-height: 2rem;
+            position: relative;
+            font-weight: 500;
+            color: $headingColor;
+        }
+
+        &--strong {
+            $maincolor: $secondary;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -8px;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $maincolor;
+            }
+        }
+
+        &--medium {
+            $maincolor: $secondary2;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -8px;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $maincolor;
+            }
+        }
+
+        &--wannabe {
+            $maincolor: $secondary3;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -8px;
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $maincolor;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+
+        &--element {
+            position: relative;
+            margin: 10px 0;
+            padding: 0;
+            padding-left: 20px;
+        }
+
+        &--strong {
+            &::before {
+                content: url('../assets/icons/check-green.svg');
+                position: absolute;
+                left: -10px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &--medium {
+            &::before {
+                content: url('../assets/icons/check-violet.svg');
+                position: absolute;
+                left: -10px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &--wannabe {
+            &::before {
+                content: url('../assets/icons/check-blue.svg');
+                position: absolute;
+                left: -10px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    &__projects {
+        width: 100%;
+        background-color: $ui1;
+    }
 }
