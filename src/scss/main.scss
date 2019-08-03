@@ -103,8 +103,19 @@ body {
 
 .section {
     width: 100%;
-    margin: 20px auto;
-    padding: 1rem;
+    margin: auto;
+    padding: 4rem 1rem;
+    display: block;
+
+    &--skill {
+        padding-bottom: 5rem;
+    }
+
+    &--projects {
+        padding: 5rem 1rem;
+        width: 100%;
+        background-color: $ui1;
+    }
 
     &__heading {
         font-size: 1.5rem;
@@ -218,8 +229,147 @@ body {
         }
     }
 
-    &__projects {
+    &__description {
+        margin-bottom: 2rem;
+    }
+
+    .projects-container {
+        display: block;
         width: 100%;
+        margin: auto;
+    }
+
+    &__project {
+        width: 100%;
+        background-color: $background;
+        margin: 1rem auto 0 auto;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        border-radius: 4px;
+        padding-top: 2rem;
+
+        &--image {
+            width: 100%;
+            display: block;
+            max-width: 40px;
+            margin: 0 1.6875rem 0 1rem;
+        }
+
+        &--title {
+            margin: 1rem 1.6875rem 0 1rem;
+            color: $headingColor;
+            font-size: 1rem;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        &--description {
+            margin: .25rem 1.6875rem 2rem 1rem;
+            font-weight: 300;
+            font-size: 0.875rem;
+            line-height: 26px;
+            color: $ui3;
+        }
+
+        &--link {
+            display: inline-block;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            color: $primary3;
+            font-weight: 500;
+            text-decoration: none;
+            position: relative;
+
+            &:first-of-type {
+                padding-right: 16px;
+                margin-right: 16px;
+                border-right: 1px solid $ui2;
+            }
+        }
+
+        &--demo {
+            &::before {
+                content: url('../assets/icons/demo.svg');
+                width: 20px;
+                height: 20px;
+                margin-top: auto;
+                margin-right: 0.375rem;
+                position: relative;
+                top: 3px;
+            }
+        }
+
+        &--repo {
+            &::before {
+                content: url('../assets/icons/code.svg');
+                width: 18px;
+                max-height: 18px;
+                margin-top: auto;
+                margin-right: 0.375rem;
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.625rem 2rem;
         background-color: $ui1;
+    }
+}
+
+.footer {
+    width: 100%;
+    padding: 7.5rem 1rem;
+    background-color: $footerBackground;
+
+    &__heading {
+        font-size: 1.5rem;
+        color: $background;
+        line-height: 2rem;
+        font-weight: 600;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -8px;
+            display: block;
+            width: 40px;
+            height: 4px;
+            border-radius: .5rem;
+            background-color: $primary3;
+        }
+    }
+
+    &__description {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 2.25em;
+        color: $background;
+    }
+
+    &__container {
+        margin-bottom: 2.5rem;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        &:nth-of-type(2) {
+            margin: 0 1.5rem;
+        }
+
+        &--image {
+            display: flex;
+            max-width: 100%;
+            margin: auto;
+        }
     }
 }
