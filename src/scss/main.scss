@@ -1,11 +1,96 @@
 @import "_normalize";
+@import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
     font: 300 16px "Poppins", sans-serif;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font: inherit;
+}
+
 body {
     width: 100%;
+    color: $color;
+    background: $background;
+    padding: 16px;
+    overflow-x: hidden;
+}
 
+.page-header {
+    width: 100%;
+    margin: 48px auto;
+
+    &__heading {
+        font-weight: 600;
+        color: $headingColor;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__description {
+        color: $color;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__link {
+        color: $primary3;
+    }
+}
+
+.img-container {
+    width: 100%;
+    max-width: 80px;
+    background: $ui2;
+    border-radius: 50%;
+    display: block;
+
+    &__image {
+        width: calc(100% - 6px);
+        max-width: 100%;
+        border: 3px solid $background;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.language {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+
+    &__link {
+        color: $color;
+        text-decoration: none;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        font-weight: 600;
+    }
+
+    &__link:first-of-type {
+        border-right: 2px solid $color;
+    }
+
+    &__picked {
+        color: $headingColor;
+    }
+}
+
+.email__link {
+    color: $primary3;
+    border-bottom: 2px solid $primary3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-bottom: .5rem;
 }
