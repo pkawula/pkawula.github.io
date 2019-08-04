@@ -24,6 +24,14 @@ const project = (title, description, demoURL, repoURL) => {
         </article>`;
 
     projects.innerHTML += f;
+
+    const links = document.querySelectorAll('.section__project--link');
+    links.forEach(link => {
+        if (link.getAttribute("href") === "#") {
+            link.setAttribute("disabled", "disabled");
+            link.classList.add("section__project--linkDisabled");
+        }
+    })
 }
 
 fetch('https://api.github.com/users/pkawula/repos?direction=desc')
