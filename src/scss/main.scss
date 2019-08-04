@@ -29,6 +29,10 @@ body {
     margin: 3rem auto;
     padding: 1rem;
 
+    @media screen and (min-width: 768px) {
+        padding: 7rem;
+    }
+
     &__heading {
         font-weight: 600;
         color: $headingColor;
@@ -120,14 +124,29 @@ body {
     padding: 4rem 1rem;
     display: block;
 
+    @media screen and (min-width: 768px) {
+        padding: 4rem 7rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     &--skill {
         padding-bottom: 5rem;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 10.5rem;
+        }
+
     }
 
     &--projects {
         padding: 5rem 1rem;
         width: 100%;
         background-color: $ui1;
+
+        @media screen and (min-width: 768px) {
+            padding: 7rem;
+        }
     }
 
     &__heading {
@@ -151,6 +170,11 @@ body {
         width: 100%;
         margin: 3rem auto;
 
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
         &:first-of-type {
             margin-top: 3.875rem;
         }
@@ -165,10 +189,6 @@ body {
             position: relative;
             font-weight: 500;
             color: $headingColor;
-        }
-
-        &--strong {
-            $maincolor: $secondary;
 
             &::before {
                 content: "";
@@ -178,37 +198,35 @@ body {
                 display: block;
                 width: 40px;
                 height: 4px;
-                background-color: $maincolor;
+                background-color: $secondary;
+            }
+
+            &--medium {
+
+                &::before {
+                    background-color: $secondary2;
+                }
+            }
+
+            &--wannabe {
+
+                &::before {
+                    background-color: $secondary3;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                &::before {
+                    top: -1.5rem;
+                }
             }
         }
 
-        &--medium {
-            $maincolor: $secondary2;
+        @media screen and (min-width: 768px) {
+            margin: 9.75rem auto;
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: -8px;
-                display: block;
-                width: 40px;
-                height: 4px;
-                background-color: $maincolor;
-            }
-        }
-
-        &--wannabe {
-            $maincolor: $secondary3;
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: -8px;
-                display: block;
-                width: 40px;
-                height: 4px;
-                background-color: $maincolor;
+            &:first-of-type {
+                margin: 9.75rem auto;
             }
         }
     }
@@ -349,6 +367,10 @@ body {
     width: 100%;
     padding: 7.5rem 1rem;
     background-color: $footerBackground;
+
+    @media screen and (min-width: 768px) {
+        padding: 7.5rem 7rem;
+    }
 
     &__heading {
         font-size: 1.5rem;
