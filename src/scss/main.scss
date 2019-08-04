@@ -41,6 +41,8 @@ body {
 
         @media screen and (min-width: 768px) {
             max-width: 780px;
+            font-size: 40px;
+            line-height: 56px;
         }
     }
 
@@ -133,6 +135,8 @@ body {
 
         @media screen and (min-width: 768px) {
             text-align: left;
+            font-size: 2.25rem;
+            line-height: 3rem;
         }
 
         &--skill {
@@ -168,6 +172,8 @@ body {
 
             @media screen and (min-width: 768px) {
                 grid-column: 1/6;
+                font-size: 2rem;
+                line-height: 2.75rem;
             }
 
             &::before {
@@ -216,6 +222,8 @@ body {
 
         @media screen and (min-width: 768px) {
             grid-column: 6/12;
+            font-size: 18px;
+            line-height: 40px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -300,11 +308,6 @@ body {
             margin: 1rem 0 0;
         }
 
-        @media screen and (min-width: 1200px) {
-            flex-basis: 30%;
-            margin: 1rem 0 0;
-        }
-
         &--image {
             width: 100%;
             display: block;
@@ -318,6 +321,11 @@ body {
             font-size: 1rem;
             line-height: 24px;
             font-weight: 500;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.25rem;
+                line-height: 2.25rem;
+            }
         }
 
         &--description {
@@ -326,6 +334,11 @@ body {
             font-size: 0.875rem;
             line-height: 26px;
             color: $ui3;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.125rem;
+                line-height: 2rem;
+            }
         }
 
         &--link {
@@ -336,6 +349,11 @@ body {
             font-weight: 500;
             text-decoration: none;
             position: relative;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.125rem;
+                line-height: 2rem;
+            }
 
             &:first-of-type {
                 padding-right: 16px;
@@ -398,6 +416,11 @@ body {
         line-height: 2rem;
         font-weight: 600;
         position: relative;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
 
         &::before {
             content: "";
