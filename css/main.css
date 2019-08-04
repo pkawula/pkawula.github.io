@@ -341,7 +341,9 @@ body {
     line-height: 36px; }
     @media screen and (min-width: 768px) {
       .page-header__heading {
-        max-width: 780px; } }
+        max-width: 780px;
+        font-size: 40px;
+        line-height: 56px; } }
   .page-header__description {
     color: #52606D;
     font-size: 20px;
@@ -411,7 +413,9 @@ body {
     text-align: center; }
     @media screen and (min-width: 768px) {
       .section__heading {
-        text-align: left; } }
+        text-align: left;
+        font-size: 2.25rem;
+        line-height: 3rem; } }
     .section__heading--skill {
       padding-bottom: .5rem;
       border-bottom: 2px solid #CBD2D9; }
@@ -439,7 +443,9 @@ body {
         .section__article--heading {
           -ms-grid-column: 1;
           -ms-grid-column-span: 5;
-          grid-column: 1/6; } }
+          grid-column: 1/6;
+          font-size: 2rem;
+          line-height: 2.75rem; } }
       .section__article--heading::before {
         content: "";
         position: absolute;
@@ -467,7 +473,9 @@ body {
       .section__list {
         -ms-grid-column: 6;
         -ms-grid-column-span: 6;
-        grid-column: 6/12; } }
+        grid-column: 6/12;
+        font-size: 18px;
+        line-height: 40px; } }
     @media screen and (min-width: 1200px) {
       .section__list {
         display: -webkit-box;
@@ -538,11 +546,6 @@ body {
         -ms-flex-preferred-size: 47%;
             flex-basis: 47%;
         margin: 1rem 0 0; } }
-    @media screen and (min-width: 1200px) {
-      .section__project {
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
-        margin: 1rem 0 0; } }
     .section__project--image {
       width: 100%;
       display: block;
@@ -554,12 +557,20 @@ body {
       font-size: 1rem;
       line-height: 24px;
       font-weight: 500; }
+      @media screen and (min-width: 768px) {
+        .section__project--title {
+          font-size: 1.25rem;
+          line-height: 2.25rem; } }
     .section__project--description {
       margin: .25rem 1.6875rem 2rem 1rem;
       font-weight: 300;
       font-size: 0.875rem;
       line-height: 26px;
       color: #52606D; }
+      @media screen and (min-width: 768px) {
+        .section__project--description {
+          font-size: 1.125rem;
+          line-height: 2rem; } }
     .section__project--link {
       display: inline-block;
       font-size: 0.875rem;
@@ -568,6 +579,10 @@ body {
       font-weight: 500;
       text-decoration: none;
       position: relative; }
+      @media screen and (min-width: 768px) {
+        .section__project--link {
+          font-size: 1.125rem;
+          line-height: 2rem; } }
       .section__project--link:first-of-type {
         padding-right: 16px;
         margin-right: 16px;
@@ -617,6 +632,10 @@ body {
     line-height: 2rem;
     font-weight: 600;
     position: relative; }
+    @media screen and (min-width: 768px) {
+      .footer__heading {
+        font-size: 2rem;
+        line-height: 2.75rem; } }
     .footer__heading::before {
       content: "";
       position: absolute;
