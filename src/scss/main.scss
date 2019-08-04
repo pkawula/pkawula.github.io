@@ -126,8 +126,6 @@ body {
 
     @media screen and (min-width: 768px) {
         padding: 4rem 7rem;
-        display: flex;
-        flex-wrap: nowrap;
     }
 
     &--skill {
@@ -171,8 +169,9 @@ body {
         margin: 3rem auto;
 
         @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: nowrap;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
         }
 
         &:first-of-type {
@@ -189,6 +188,10 @@ body {
             position: relative;
             font-weight: 500;
             color: $headingColor;
+
+            @media screen and (min-width: 768px) {
+                grid-column: 1/6;
+            }
 
             &::before {
                 content: "";
@@ -234,11 +237,25 @@ body {
     &__list {
         list-style: none;
 
+        @media screen and (min-width: 768px) {
+            grid-column: 6/12;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         &--element {
             position: relative;
             margin: 10px 0;
             padding: 0;
             padding-left: 20px;
+
+            @media screen and (min-width: 1200px) {
+                flex-basis: 48%;
+            }
         }
 
         &--strong {
@@ -274,12 +291,22 @@ body {
 
     &__description {
         margin-bottom: 2rem;
+
+        @media screen and (min-width: 768px) {
+            max-width: 580px;
+        }
     }
 
     .projects-container {
         display: block;
         width: 100%;
         margin: auto;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__project {
@@ -289,6 +316,16 @@ body {
         box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
         border-radius: 4px;
         padding-top: 2rem;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 47%;
+            margin: 1rem 0 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: 30%;
+            margin: 1rem 0 0;
+        }
 
         &--image {
             width: 100%;
