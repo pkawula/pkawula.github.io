@@ -18,6 +18,10 @@ body {
     color: $color;
     background: $background;
     overflow-x: hidden;
+
+    @media screen and (min-width: 768px) {
+        border: 1rem solid $headingColor;
+    }
 }
 
 .page-header {
@@ -30,6 +34,10 @@ body {
         color: $headingColor;
         font-size: 24px;
         line-height: 36px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 780px;
+        }
     }
 
     &__description {
@@ -38,6 +46,10 @@ body {
         line-height: 36px;
         font-weight: 500;
         font-size: 20px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 680px;
+        }
     }
 
     &__link {
@@ -124,6 +136,10 @@ body {
         font-weight: 500;
         color: $headingColor;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
 
         &--skill {
             padding-bottom: .5rem;
