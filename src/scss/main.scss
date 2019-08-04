@@ -79,29 +79,6 @@ body {
     }
 }
 
-.language {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 4rem;
-
-    &__link {
-        color: $color;
-        text-decoration: none;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        font-weight: 600;
-    }
-
-    &__link:first-of-type {
-        border-right: 2px solid $color;
-    }
-
-    &__picked {
-        color: $headingColor;
-    }
-}
-
 .email__link {
     color: $primary3;
     border-bottom: 2px solid $primary3;
