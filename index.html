@@ -20,17 +20,17 @@
         <span class="img-container">
             <img src="assets/author.jpg" alt="Piotr Kawula's picture" class="img-container__image">
         </span>
-        <span class="language">
-            <a href="#" class="language__link language__polish language__polish--js">PL</a>
-            <a href="#" class="language__link language__picked language__english language__english--js">EN</a>
-        </span>
         <h1 class="page-header__heading">Hey there! 👋 My name is Piotr and I’m an aspiring Frontend developer.</h1>
         <p class="page-header__description">
             You might be interested in checking the list of
-            <a href="#myskills" class="page-header__link"> my skills</a>.
+            <a href="#" class="page-header__link page-header__link--myskills-js"> my skills</a>.
             Don’t forget to
-            have a glimpse at <a href="#myprojects" class="page-header__link">my projects</a>. Currently I’m looking for
-            a new challenges so if you have one - <a href="#contact" class="page-header__link"> contact me</a> 😊
+            have a glimpse at <a href="#" class="page-header__link page-header__link--myprojects-js">my
+                projects</a>. Currently
+            I’m looking for
+            a new challenges so if you have one - <a href="#" class="page-header__link page-header__link--contact-js">
+                contact
+                me</a> 😊
         </p>
         <a href="mailto:kontakt@piotrkawula.pl" class="email__link">kontakt@piotrkawula.pl</a>
     </header>
@@ -42,13 +42,13 @@
                 <ul class="section__list">
                     <li class="section__list--element section__list--strong">Semantic HTML5</li>
                     <li class="section__list--element section__list--strong">CSS grid</li>
-                    <li class="section__list--element section__list--strong">Flexbox</li>
-                    <li class="section__list--element section__list--strong">Forms</li>
+                    <li class="section__list--element section__list--strong">JS: destructuring arrays</li>
                     <li class="section__list--element section__list--strong">Markdown</li>
                     <li class="section__list--element section__list--strong">JS: DOM manipulations</li>
-                    <li class="section__list--element section__list--strong">JS: localStorage</li>
+                    <li class="section__list--element section__list--strong">JS: Local storage</li>
                     <li class="section__list--element section__list--strong">SASS</li>
                     <li class="section__list--element section__list--strong">Figma</li>
+                    <li class="section__list--element section__list--strong">CSS animations</li>
                 </ul>
             </article>
             <article class="section__article">
@@ -56,11 +56,10 @@
                 <ul class="section__list">
                     <li class="section__list--element section__list--medium">JS ES6 + features</li>
                     <li class="section__list--element section__list--medium">Progressive web apps</li>
-                    <li class="section__list--element section__list--medium">CSS animations</li>
-                    <li class="section__list--element section__list--medium">Git</li>
                     <li class="section__list--element section__list--medium">Working with API</li>
-                    <li class="section__list--element section__list--medium">Websockets</li>
-                    <li class="section__list--element section__list--medium">Server side rendering</li>
+                    <li class="section__list--element section__list--medium">Git</li>
+                    <li class="section__list--element section__list--medium">NPM scripts</li>
+                    <li class="section__list--element section__list--medium">Accessibility</li>
                 </ul>
             </article>
             <article class="section__article">
@@ -70,9 +69,9 @@
                     <li class="section__list--element section__list--wannabe">Typescript</li>
                     <li class="section__list--element section__list--wannabe">Node.JS</li>
                     <li class="section__list--element section__list--wannabe">Gatsby</li>
-                    <li class="section__list--element section__list--wannabe">Electron</li>
-                    <li class="section__list--element section__list--wannabe">Accessibility</li>
-                    <li class="section__list--element section__list--wannabe">NPM Scripts</li>
+                    <li class="section__list--element section__list--wannabe">GraohQL</li>
+                    <li class="section__list--element section__list--wannabe">Websockets</li>
+                    <li class="section__list--element section__list--wannabe">Server side rendering</li>
                 </ul>
             </article>
         </section>
@@ -80,44 +79,19 @@
             <h2 class="section__heading">Recent projects</h2>
             <p class="section__description">I started my frontend developer path in 2016. Since then, I’ve built some
                 projects. Here’s the list of the things I’ve done since I started using github.</p>
-            <div class="projects-container projects-container--js">
-                <article class="section__project">
-                    <img src="assets/icons/github-bigger.png" alt="Github logo" class="section__project--image">
-                    <h4 class="section__project--title">Project title</h4>
-                    <p class="section__project--description">Project descritpion. Lorem ipsum dolor sit amet.</p>
-                    <span class="links-container"><a href="#"
-                            class="section__project--link section__project--demo">Demo</a><a href="#"
-                            class="section__project--link section__project--repo">Github</a></span>
-                </article>
-                <article class="section__project">
-                    <img src="assets/icons/github-bigger.png" alt="Github logo" class="section__project--image">
-                    <h4 class="section__project--title">Project title</h4>
-                    <p class="section__project--description">Project descritpion. Lorem ipsum dolor sit amet.</p>
-                    <span class="links-container"><a href="#"
-                            class="section__project--link section__project--demo">Demo</a><a href="#"
-                            class="section__project--link section__project--repo">Github</a></span>
-                </article>
-                <article class="section__project">
-                    <img src="assets/icons/github-bigger.png" alt="Github logo" class="section__project--image">
-                    <h4 class="section__project--title">Project title</h4>
-                    <p class="section__project--description">Project descritpion. Lorem ipsum dolor sit amet.</p>
-                    <span class="links-container"><a href="#"
-                            class="section__project--link section__project--demo">Demo</a><a href="#"
-                            class="section__project--link section__project--repo">Github</a></span>
-                </article>
-            </div>
+            <div class="projects-container projects-container--js"></div>
         </section>
     </main>
     <footer class="footer">
         <h2 id="contact" class="footer__heading">Contact me</h2>
         <p class="footer__description">I’m open for new opportunities. If you have one for me we should talk!</p>
         <div class="footer__container">
-            <a href="https://facebook.com" class="footer__link"><img src="assets/icons/facebook.png" alt="Facebook"
+            <a href="https://www.facebook.com/ojciecpio96" class="footer__link"><img src="assets/icons/facebook.png"
+                    alt="Facebook" class="footer__link--image"></a>
+            <a href="https://github.com/pkawula" class="footer__link"><img src="assets/icons/github.png" alt="Github"
                     class="footer__link--image"></a>
-            <a href="https://github.com" class="footer__link"><img src="assets/icons/github.png" alt="Github"
-                    class="footer__link--image"></a>
-            <a href="https://instagram.com" class="footer__link"><img src="assets/icons/instagram.png" alt="Instagram"
-                    class="footer__link--image"></a>
+            <a href="https://www.instagram.com/ojciecpio_xd/" class="footer__link"><img src="assets/icons/instagram.png"
+                    alt="Instagram" class="footer__link--image"></a>
         </div>
         <a href="mailto:kontakt@piotrkawula.pl" class="email__link">kontakt@piotrkawula.pl</a>
     </footer>
