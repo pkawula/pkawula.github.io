@@ -187,24 +187,26 @@ body {
                 background-color: $secondary;
             }
 
-            &--medium {
-
-                &::before {
-                    background-color: $secondary2;
-                }
-            }
-
-            &--wannabe {
-
-                &::before {
-                    background-color: $secondary3;
-                }
-            }
-
             @media screen and (min-width: 768px) {
                 &::before {
                     top: -1.5rem;
                 }
+            }
+        }
+
+
+
+        &--medium {
+
+            &::before {
+                background-color: $secondary2;
+            }
+        }
+
+        &--wannabe {
+
+            &::before {
+                background-color: $secondary3;
             }
         }
 
